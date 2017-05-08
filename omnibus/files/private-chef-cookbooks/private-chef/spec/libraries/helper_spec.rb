@@ -1,6 +1,20 @@
 require_relative '../../libraries/helper.rb'
 
 describe OmnibusHelper do
+  describe "#is_ip?" do
+    it "returns true for an IPv4 address" do
+      expect(OmnibusHelper.is_ip?("192.168.33.10")).to eq(true)
+    end
+
+    it "returns true for an IPv6 address" do
+      expect(OmnibusHelper.is_ip?("::1")).to eq(true)
+    end
+
+    it "returns false for a hostname" do
+      expect(OmnibusHelper.is_ip?("1.example.com")).to eq(false)
+    end
+  end
+
   describe '#bookshelf_s3_url' do
     let(:node) do
       {
