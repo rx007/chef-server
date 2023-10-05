@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'chefspec'
-gem 'berkshelf'
+gem 'berkshelf', '>= 7.0.0'
 gem 'bundler', '>1.10'
 
 group :release do
