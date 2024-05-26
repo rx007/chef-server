@@ -38,7 +38,7 @@ group :development, :test do
   # https://github.com/nixme/jazz_hands/issues/25
   gem 'jazz_hands', git: 'https://github.com/nixme/jazz_hands', branch: 'bring-your-own-debugger'
   gem 'pry-byebug'
-  gem 'mailcatcher'
+  gem 'mailcatcher', '>= 0.10.0'
   gem 'rspec-rails', '~> 3.2'
 end
 
