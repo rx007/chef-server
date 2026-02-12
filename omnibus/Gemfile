@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'chefspec'
-gem 'berkshelf'
+gem 'berkshelf', '>= 7.0.0'
 gem 'bundler', '>1.10'
 
 group :release do
-  gem 'github_changelog_generator'
+  gem 'github_changelog_generator', '>= 1.15.0'
 end
 
 # Install omnibus software
